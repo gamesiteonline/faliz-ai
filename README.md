@@ -1,6 +1,28 @@
-# F.A.L.I.Z AI System
+<div align="center">
 
-![FALIZ AI Logo](https://via.placeholder.com/150x150?text=FALIZ+AI)
+```html
+<pre style="font-family: monospace; line-height: 1.2; text-align: center; background-color: #0d1117; padding: 20px; border-radius: 10px; color: #c9d1d9;">
+<span style="color: #58a6ff;">      ::::::::::</span> <span style="color: #ff7b72;">:::</span>      <span style="color: #79c0ff;">:::</span>        <span style="color: #d2a8ff;">:::::::::::</span> <span style="color: #ffa657;">::::::::::</span>       <span style="color: #a5d6ff;">:::</span>      <span style="color: #ff7b72;">:::::::::::</span>
+<span style="color: #58a6ff;">     :+:</span>        <span style="color: #ff7b72;">:+: :+:</span>    <span style="color: #79c0ff;">:+:</span>            <span style="color: #d2a8ff;">:+:</span>          <span style="color: #ffa657;">:+:</span>         <span style="color: #a5d6ff;">:+: :+:</span>        <span style="color: #ff7b72;">:+:</span>   
+<span style="color: #58a6ff;">    +:+</span>        <span style="color: #ff7b72;">+:+   +:+</span>   <span style="color: #79c0ff;">+:+</span>            <span style="color: #d2a8ff;">+:+</span>         <span style="color: #ffa657;">+:+</span>         <span style="color: #a5d6ff;">+:+   +:+</span>       <span style="color: #ff7b72;">+:+</span>   
+<span style="color: #58a6ff;">   :#::+::#</span>   <span style="color: #ff7b72;">+#++:++#++:</span>  <span style="color: #79c0ff;">+#+</span>            <span style="color: #d2a8ff;">+#+</span>        <span style="color: #ffa657;">+#+</span>         <span style="color: #a5d6ff;">+#++:++#++:</span>      <span style="color: #ff7b72;">+#+</span>   
+<span style="color: #58a6ff;">  +#+</span>        <span style="color: #ff7b72;">+#+     +#+</span>   <span style="color: #79c0ff;">+#+</span>            <span style="color: #d2a8ff;">+#+</span>       <span style="color: #ffa657;">+#+</span>          <span style="color: #a5d6ff;">+#+     +#+</span>      <span style="color: #ff7b72;">+#+</span>   
+<span style="color: #58a6ff;"> #+#</span>        <span style="color: #ff7b72;">#+#     #+#</span>   <span style="color: #79c0ff;">#+#</span>            <span style="color: #d2a8ff;">#+#</span>      <span style="color: #ffa657;">#+#</span>           <span style="color: #a5d6ff;">#+#     #+#</span>      <span style="color: #ff7b72;">#+#</span>   
+<span style="color: #58a6ff;">###</span>        <span style="color: #ff7b72;">###     ###</span>   <span style="color: #79c0ff;">##########</span> <span style="color: #d2a8ff;">###########</span> <span style="color: #ffa657;">##########</span>   <span style="color: #a5d6ff;">###     ###</span>  <span style="color: #ff7b72;">###########</span>
+
+<span style="color: #8b949e;">        ╭──────────────────────────────────────────────────────────╮</span>
+<span style="color: #8b949e;">        │</span>  <span style="color: #e3b341;">/\_/\</span>                                                   <span style="color: #8b949e;">│</span>
+<span style="color: #8b949e;">        │</span> <span style="color: #e3b341;">( o.o )</span>  <span style="color: #c9d1d9;">Flexible Autonomous Life Intelligence Zone</span>      <span style="color: #8b949e;">│</span>
+<span style="color: #8b949e;">        │</span>  <span style="color: #e3b341;">> ^ <</span>                                                   <span style="color: #8b949e;">│</span>
+<span style="color: #8b949e;">        ╰──────────────────────────────────────────────────────────╯</span>
+</pre>
+```
+
+**Your life, intelligently orchestrated.**
+
+</div>
+
+---
 
 **F.A.L.I.Z AI** (Flexible Autonomous Life Intelligence Zone) is an advanced personal AI operating system designed to intelligently orchestrate your digital life. Built with a modular architecture, FALIZ AI aims to anticipate your needs, streamline your workflows, and provide proactive assistance across various domains, from productivity and communication to smart home integration and personal knowledge management.
 
@@ -98,9 +120,71 @@ FALIZ AI is built as an event-driven microservices monorepo with a modular plugi
 -   **Reverse Proxy:** Nginx
 -   **Monitoring:** Health check endpoints
 
-## Getting Started
+## Installation & Setup
 
-To get your F.A.L.I.Z AI system up and running, please refer to the comprehensive [ACTIVATION_GUIDE.md](./ACTIVATION_GUIDE.md) for detailed step-by-step instructions on prerequisites, environment setup, and component activation.
+Follow these steps to get your F.A.L.I.Z AI system up and running. For a more detailed guide, please refer to the [ACTIVATION_GUIDE.md](./ACTIVATION_GUIDE.md).
+
+### 1. Prerequisites
+
+Ensure you have the following installed on your system:
+-   [Docker & Docker Compose](https://docs.docker.com/get-docker/)
+-   [Node.js (v18+) & Yarn](https://nodejs.org/)
+-   [Python (v3.12+) & Poetry](https://python-poetry.org/)
+-   [Git](https://git-scm.com/)
+
+### 2. Clone the Repository
+
+```bash
+git clone https://github.com/gamesiteonline/faliz-ai.git
+cd faliz-ai
+```
+
+### 3. Environment Configuration
+
+Copy the example environment file and fill in your API keys and configuration details.
+
+```bash
+cp .env.example .env
+```
+*Open `.env` in your preferred text editor and add your `OPENAI_API_KEY`, database URLs, and other necessary credentials.*
+
+### 4. Start Infrastructure Services
+
+Launch the required databases (PostgreSQL, Redis, ChromaDB) using Docker Compose:
+
+```bash
+docker compose up -d
+```
+
+### 5. Start the Backend (FastAPI)
+
+Open a new terminal window, navigate to the backend directory, install dependencies, and start the server:
+
+```bash
+cd apps/backend
+poetry install
+poetry run uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
+
+### 6. Start the Frontend (React)
+
+Open another terminal window, navigate to the frontend directory, install dependencies, and start the development server:
+
+```bash
+cd apps/frontend
+yarn install
+yarn dev
+```
+
+### 7. (Optional) Start the Desktop App (Electron)
+
+If you prefer the native desktop experience, open a terminal in the desktop directory:
+
+```bash
+cd apps/desktop
+yarn install
+yarn electron:dev
+```
 
 ## Development
 
