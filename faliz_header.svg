@@ -35,18 +35,24 @@
         0%, 100% { filter: drop-shadow(0 0 5px rgba(226, 184, 157, 0.2)); }
         50% { filter: drop-shadow(0 0 15px rgba(226, 184, 157, 0.5)); }
       }
-      @keyframes scanline {
-        0% { transform: translateY(-400px); }
-        100% { transform: translateY(400px); }
-      }
       @keyframes float {
         0%, 100% { transform: translateY(0); }
         50% { transform: translateY(-5px); }
+      }
+      @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); opacity: 0.8; }
+        50% { transform: scale(1.05); opacity: 1; }
       }
       .blink { animation: blink 1.5s infinite; }
       .type { animation: fadeIn 0.8s ease-out forwards; opacity: 0; }
       .glow { animation: glow 3s infinite ease-in-out; }
       .float { animation: float 4s infinite ease-in-out; }
+      .rotate { animation: rotate 20s linear infinite; transform-origin: center; }
+      .pulse { animation: pulse 4s infinite ease-in-out; transform-origin: center; }
       .delay-1 { animation-delay: 0.2s; }
       .delay-2 { animation-delay: 0.4s; }
       .delay-3 { animation-delay: 0.6s; }
@@ -75,18 +81,30 @@
 
   <!-- Elegant Structural Frames (Claude Coder Aesthetic) -->
   <g stroke="#e2b89d" stroke-opacity="0.25" stroke-width="1" fill="none">
-    <!-- Top Left Status Block -->
     <path d="M 80,90 L 80,60 L 220,60" class="type" />
-    <!-- Bottom Right Framework Anchor -->
     <path d="M 1120,310 L 1120,340 L 980,340" class="type delay-4" />
+  </g>
+
+  <!-- Sophisticated Animated Logo (Neural Node / Abstract F) -->
+  <g transform="translate(100, 160)" class="pulse">
+    <!-- Outer Rings -->
+    <circle cx="0" cy="0" r="35" fill="none" stroke="url(#warmGold)" stroke-width="0.5" opacity="0.2" class="rotate" />
+    <circle cx="0" cy="0" r="30" fill="none" stroke="url(#warmGold)" stroke-width="1" opacity="0.4" style="animation-direction: reverse;" class="rotate" />
+    
+    <!-- Core Geometric Shape -->
+    <path d="M -15,-15 L 15,-15 L 15,0 L 0,0 L 0,15 L -15,15 Z" fill="url(#warmGold)" opacity="0.9" filter="url(#softDepth)" class="glow" />
+    
+    <!-- Pulse Points -->
+    <circle cx="-15" cy="-15" r="2" fill="#eed6c4" class="blink" />
+    <circle cx="15" cy="-15" r="2" fill="#eed6c4" class="blink delay-2" />
+    <circle cx="15" cy="0" r="2" fill="#eed6c4" class="blink delay-4" />
+    <circle cx="0" cy="15" r="2" fill="#eed6c4" class="blink delay-6" />
   </g>
 
   <!-- Code Syntax & System Architecture Frame (Right Column) -->
   <g transform="translate(820, 105)" font-family="Consolas, 'Fira Code', Monaco, monospace" font-size="12" xml:space="preserve">
-    <!-- Bracket Wireframe Graphic -->
     <path d="M -30,0 L -40,0 L -40,185 L -30,185" fill="none" stroke="#e2b89d" stroke-width="1" opacity="0.3" class="type delay-1"/>
     
-    <!-- Code Construct Lines -->
     <text x="0" y="15" fill="#e2b89d" font-weight="bold" opacity="0.9" class="type delay-2">class FalizCore(AutonomousAgent):</text>
     <text x="20" y="40" fill="#eed6c4" opacity="0.6" class="type delay-3">def __init__(self, version="3.2"):</text>
     <text x="40" y="65" fill="#cc9a7a" opacity="0.8" class="type delay-4">self.identity = "FALIZ"</text>
@@ -96,7 +114,6 @@
     <text x="20" y="145" fill="#e2b89d" font-weight="bold" opacity="0.9" class="type delay-7">def execute(self, prompt):</text>
     <text x="40" y="170" fill="#eed6c4" opacity="0.5" class="type delay-7">return self.brain.orchestrate()</text>
 
-    <!-- Interactive Node Indicator -->
     <circle cx="-40" cy="92" r="4" fill="#eed6c4" class="blink"/>
     <circle cx="-40" cy="92" r="10" fill="none" stroke="#e2b89d" stroke-width="1" opacity="0.5" class="float"/>
   </g>
@@ -111,7 +128,7 @@
 
   <!-- Primary Branding Layout -->
   <!-- FALIZ Title (Using a premium, clean Editorial Serif styling) -->
-  <text x="95" y="210" 
+  <text x="160" y="210" 
         font-family="Georgia, 'Times New Roman', Times, serif" 
         font-size="100" 
         font-weight="normal" 
@@ -121,7 +138,7 @@
         class="glow type">Faliz</text>
 
   <!-- Framework Subtitle Tagline -->
-  <text x="100" y="258" 
+  <text x="160" y="258" 
         font-family="Consolas, 'Fira Code', Monaco, monospace" 
         font-size="15" 
         font-weight="bold" 
@@ -131,8 +148,8 @@
         class="type delay-2">AUTONOMOUS MULTIPLE AGENT SYSTEM</text>
 
   <!-- Bottom Stylized Separator Accent -->
-  <line x1="100" y1="280" x2="320" y2="280" stroke="#cc9a7a" stroke-width="1.5" opacity="0.6" class="type delay-3"/>
-  <rect x="100" y="279" width="30" height="3" fill="#eed6c4" class="type delay-3"/>
+  <line x1="160" y1="280" x2="380" y2="280" stroke="#cc9a7a" stroke-width="1.5" opacity="0.6" class="type delay-3"/>
+  <rect x="160" y="279" width="30" height="3" fill="#eed6c4" class="type delay-3"/>
 
   <!-- Technical Version Tag (Bottom Right) -->
   <text x="1105" y="325" 
