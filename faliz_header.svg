@@ -17,10 +17,53 @@
     <filter id="softDepth" x="-10%" y="-10%" width="120%" height="120%">
       <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
     </filter>
+
+    <style>
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+      @keyframes type {
+        from { stroke-dashoffset: 100%; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes glow {
+        0%, 100% { filter: drop-shadow(0 0 5px rgba(226, 184, 157, 0.2)); }
+        50% { filter: drop-shadow(0 0 15px rgba(226, 184, 157, 0.5)); }
+      }
+      @keyframes scanline {
+        0% { transform: translateY(-400px); }
+        100% { transform: translateY(400px); }
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+      }
+      .blink { animation: blink 1.5s infinite; }
+      .type { animation: fadeIn 0.8s ease-out forwards; opacity: 0; }
+      .glow { animation: glow 3s infinite ease-in-out; }
+      .float { animation: float 4s infinite ease-in-out; }
+      .delay-1 { animation-delay: 0.2s; }
+      .delay-2 { animation-delay: 0.4s; }
+      .delay-3 { animation-delay: 0.6s; }
+      .delay-4 { animation-delay: 0.8s; }
+      .delay-5 { animation-delay: 1.0s; }
+      .delay-6 { animation-delay: 1.2s; }
+      .delay-7 { animation-delay: 1.4s; }
+    </style>
   </defs>
 
   <!-- Main Canvas Background -->
   <rect width="1200" height="400" fill="#0d1117"/>
+
+  <!-- Subtle Scanline Effect -->
+  <rect width="1200" height="2" fill="#eed6c4" opacity="0.02">
+    <animateTransform attributeName="transform" type="translate" from="0,-10" to="0,410" dur="8s" repeatCount="indefinite" />
+  </rect>
 
   <!-- Minimal Structural Code Grid / Alignment System -->
   <g stroke="#eed6c4" stroke-opacity="0.04" stroke-width="1">
@@ -33,35 +76,37 @@
   <!-- Elegant Structural Frames (Claude Coder Aesthetic) -->
   <g stroke="#e2b89d" stroke-opacity="0.25" stroke-width="1" fill="none">
     <!-- Top Left Status Block -->
-    <path d="M 80,90 L 80,60 L 220,60" />
+    <path d="M 80,90 L 80,60 L 220,60" class="type" />
     <!-- Bottom Right Framework Anchor -->
-    <path d="M 1120,310 L 1120,340 L 980,340" />
+    <path d="M 1120,310 L 1120,340 L 980,340" class="type delay-4" />
   </g>
 
   <!-- Code Syntax & System Architecture Frame (Right Column) -->
   <g transform="translate(820, 105)" font-family="Consolas, 'Fira Code', Monaco, monospace" font-size="12" xml:space="preserve">
     <!-- Bracket Wireframe Graphic -->
-    <path d="M -30,0 L -40,0 L -40,185 L -30,185" fill="none" stroke="#e2b89d" stroke-width="1" opacity="0.3"/>
+    <path d="M -30,0 L -40,0 L -40,185 L -30,185" fill="none" stroke="#e2b89d" stroke-width="1" opacity="0.3" class="type delay-1"/>
     
     <!-- Code Construct Lines -->
-    <text x="0" y="15" fill="#e2b89d" font-weight="bold" opacity="0.9">class FalizCore(AutonomousAgent):</text>
-    <text x="20" y="40" fill="#eed6c4" opacity="0.6">def __init__(self, version="3.2"):</text>
-    <text x="40" y="65" fill="#cc9a7a" opacity="0.8">self.identity = "FALIZ"</text>
-    <text x="40" y="90" fill="#cc9a7a" opacity="0.8">self.engine = "Multi-Agent_v3"</text>
-    <text x="40" y="115" fill="#eed6c4" opacity="0.6">self.status = "OPERATIONAL"</text>
+    <text x="0" y="15" fill="#e2b89d" font-weight="bold" opacity="0.9" class="type delay-2">class FalizCore(AutonomousAgent):</text>
+    <text x="20" y="40" fill="#eed6c4" opacity="0.6" class="type delay-3">def __init__(self, version="3.2"):</text>
+    <text x="40" y="65" fill="#cc9a7a" opacity="0.8" class="type delay-4">self.identity = "FALIZ"</text>
+    <text x="40" y="90" fill="#cc9a7a" opacity="0.8" class="type delay-5">self.engine = "Multi-Agent_v3"</text>
+    <text x="40" y="115" fill="#eed6c4" opacity="0.6" class="type delay-6">self.status = "OPERATIONAL"</text>
     
-    <text x="20" y="145" fill="#e2b89d" font-weight="bold" opacity="0.9">def execute(self, prompt):</text>
-    <text x="40" y="170" fill="#eed6c4" opacity="0.5">return self.brain.orchestrate()</text>
+    <text x="20" y="145" fill="#e2b89d" font-weight="bold" opacity="0.9" class="type delay-7">def execute(self, prompt):</text>
+    <text x="40" y="170" fill="#eed6c4" opacity="0.5" class="type delay-7">return self.brain.orchestrate()</text>
 
     <!-- Interactive Node Indicator -->
-    <circle cx="-40" cy="92" r="4" fill="#eed6c4"/>
-    <circle cx="-40" cy="92" r="10" fill="none" stroke="#e2b89d" stroke-width="1" opacity="0.5"/>
+    <circle cx="-40" cy="92" r="4" fill="#eed6c4" class="blink"/>
+    <circle cx="-40" cy="92" r="10" fill="none" stroke="#e2b89d" stroke-width="1" opacity="0.5" class="float"/>
   </g>
 
   <!-- Left Side Small Accent / Dev Info -->
   <g transform="translate(95, 82)" font-family="Consolas, 'Fira Code', monospace" font-size="11" letter-spacing="1">
-    <text x="0" y="0" fill="#e2b89d" font-weight="bold" opacity="0.8">● SYSTEM_INIT</text>
-    <text x="110" y="0" fill="#eed6c4" opacity="0.4">// Developer: FAHAD</text>
+    <text x="0" y="0" fill="#e2b89d" font-weight="bold" opacity="0.8" class="type">
+      <tspan class="blink">●</tspan> SYSTEM_INIT
+    </text>
+    <text x="110" y="0" fill="#eed6c4" opacity="0.4" class="type delay-1">// Developer: FAHAD</text>
   </g>
 
   <!-- Primary Branding Layout -->
@@ -72,7 +117,8 @@
         font-weight="normal" 
         letter-spacing="4" 
         fill="url(#warmGold)" 
-        filter="url(#softDepth)">Faliz</text>
+        filter="url(#softDepth)"
+        class="glow type">Faliz</text>
 
   <!-- Framework Subtitle Tagline -->
   <text x="100" y="258" 
@@ -81,11 +127,12 @@
         font-weight="bold" 
         letter-spacing="5" 
         fill="#eed6c4" 
-        opacity="0.85">AUTONOMOUS MULTIPLE AGENT SYSTEM</text>
+        opacity="0.85"
+        class="type delay-2">AUTONOMOUS MULTIPLE AGENT SYSTEM</text>
 
   <!-- Bottom Stylized Separator Accent -->
-  <line x1="100" y1="280" x2="320" y2="280" stroke="#cc9a7a" stroke-width="1.5" opacity="0.6"/>
-  <rect x="100" y="279" width="30" height="3" fill="#eed6c4"/>
+  <line x1="100" y1="280" x2="320" y2="280" stroke="#cc9a7a" stroke-width="1.5" opacity="0.6" class="type delay-3"/>
+  <rect x="100" y="279" width="30" height="3" fill="#eed6c4" class="type delay-3"/>
 
   <!-- Technical Version Tag (Bottom Right) -->
   <text x="1105" y="325" 
@@ -95,5 +142,6 @@
         fill="#eed6c4" 
         text-anchor="end" 
         font-weight="bold"
-        opacity="0.5">build_v3.2 // release_stable</text>
+        opacity="0.5"
+        class="type delay-5">build_v3.2 // release_stable</text>
 </svg>
