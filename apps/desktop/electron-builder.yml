@@ -1,0 +1,37 @@
+appId: com.faliz.ai
+productName: FALIZ AI
+copyright: Copyright © 2024 ${author}
+
+compression: maximum
+
+files:
+  - "src/**/*"
+  - "assets/**/*"
+  - "../frontend/dist/**/*"
+
+mac:
+  category: "public.app-category.utilities"
+  target: "dmg"
+  icon: "assets/icon.png"
+
+win:
+  target: "nsis"
+  icon: "assets/icon.png"
+
+linux:
+  category: "Utility"
+  target: "AppImage"
+  icon: "assets/icon.png"
+
+directories:
+  output: "build"
+  buildResources: "assets"
+
+# Auto-update configuration
+publish:
+  provider: github
+  owner: gamesiteonline
+  repo: faliz-ai
+  # Replace with your GitHub repo name
+  private: true
+  token: ${GH_TOKEN}

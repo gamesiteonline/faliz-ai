@@ -1,0 +1,23 @@
+{
+  "name": "faliz-desktop",
+  "version": "1.0.0",
+  "description": "Electron shell for FALIZ AI desktop application",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "dist": "electron-builder --dir",
+    "pack": "electron-builder --mac --win --linux"
+  },
+  "keywords": [],
+  "author": "Manus AI",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "dependencies": {
+    "electron-updater": "^6.0.0",
+    "node-fetch": "^3.0.0"
+  }
+}
