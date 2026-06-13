@@ -1,32 +1,99 @@
-<svg width="800" height="250" viewBox="0 0 800 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .mono { font-family: monospace; font-size: 18px; white-space: pre; }
-    .blue { fill: #58a6ff; }
-    .red { fill: #ff7b72; }
-    .light-blue { fill: #79c0ff; }
-    .purple { fill: #d2a8ff; }
-    .orange { fill: #ffa657; }
-    .gray { fill: #8b949e; }
-    .yellow { fill: #e3b341; }
-    .white { fill: #c9d1d9; }
-  </style>
-  <rect width="800" height="250" fill="#0d1117"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Claude Signature Sophisticated Dark Background -->
+    <linearGradient id="claudeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#191816"/>
+      <stop offset="100%" stop-color="#0f0e0d"/>
+    </linearGradient>
 
-  <text x="50%" y="30" dominant-baseline="middle" text-anchor="middle" class="mono">
-    <tspan x="50%" dy="0" class="blue">      :::::::::: <tspan class="red">:::</tspan>      <tspan class="light-blue">:::</tspan>        <tspan class="purple">:::::::::::</tspan> <tspan class="orange">::::::::::</tspan>       <tspan class="blue">:::</tspan>      <tspan class="red">:::::::::::</tspan></tspan>
-    <tspan x="50%" dy="1.2em" class="blue">     :+:        <tspan class="red">:+: :+: </tspan>   <tspan class="light-blue">:+:</tspan>            <tspan class="purple">:+:</tspan>          <tspan class="orange">:+:</tspan>         <tspan class="blue">:+: :+: </tspan>       <tspan class="red">:+:</tspan>   </tspan>
-    <tspan x="50%" dy="1.2em" class="blue">    +:+        <tspan class="red">+:+   +:+ </tspan>  <tspan class="light-blue">+:+</tspan>            <tspan class="purple">+:+</tspan>         <tspan class="orange">+:+</tspan>         <tspan class="blue">+:+   +:+ </tspan>      <tspan class="red">+:+</tspan>   </tspan>
-    <tspan x="50%" dy="1.2em" class="blue">   :#::+::#   <tspan class="red">+#++:++#++:</tspan>  <tspan class="light-blue">+#+</tspan>            <tspan class="purple">+#+</tspan>        <tspan class="orange">+#+</tspan>         <tspan class="blue">+#++:++#++:</tspan>      <tspan class="red">+#+</tspan>   </tspan>
-    <tspan x="50%" dy="1.2em" class="blue">  +#+        <tspan class="red">+#+     +#+</tspan>   <tspan class="light-blue">+#+</tspan>            <tspan class="purple">+#+</tspan>       <tspan class="orange">+#+</tspan>          <tspan class="blue">+#+     +#+</tspan>      <tspan class="red">+#+</tspan>   </tspan>
-    <tspan x="50%" dy="1.2em" class="blue"> #+#        <tspan class="red">#+#     #+#</tspan>   <tspan class="light-blue">#+#</tspan>            <tspan class="purple">#+#</tspan>      <tspan class="orange">#+#</tspan>           <tspan class="blue">#+#     #+#</tspan>      <tspan class="red">#+#</tspan>   </tspan>
-    <tspan x="50%" dy="1.2em" class="blue">###        <tspan class="red">###     ###</tspan>   <tspan class="light-blue">##########</tspan> <tspan class="purple">###########</tspan> <tspan class="orange">##########</tspan>   <tspan class="blue">###     ###</tspan>  <tspan class="red">###########</tspan></tspan>
-  </text>
+    <!-- Warm Anthropic Metallic Accents -->
+    <linearGradient id="warmGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e2b89d"/>
+      <stop offset="50%" stop-color="#eed6c4"/>
+      <stop offset="100%" stop-color="#cc9a7a"/>
+    </linearGradient>
 
-  <text x="50%" y="180" dominant-baseline="middle" text-anchor="middle" class="mono gray">
-    <tspan x="50%" dy="0">        ╭──────────────────────────────────────────────────────────╮</tspan>
-    <tspan x="50%" dy="1.2em">        │  <tspan class="yellow">/\_/\</tspan>                                                   │</tspan>
-    <tspan x="50%" dy="1.2em">        │ <tspan class="yellow">( o.o )</tspan>  <tspan class="white">Flexible Autonomous Life Intelligence Zone</tspan>      │</tspan>
-    <tspan x="50%" dy="1.2em">        │  <tspan class="yellow">> ^ <</tspan>                                                   │</tspan>
-    <tspan x="50%" dy="1.2em">        ╰──────────────────────────────────────────────────────────╯</tspan>
-  </text>
+    <!-- Subtle Smooth Text Shadow for Depth -->
+    <filter id="softDepth" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Main Canvas Background -->
+  <rect width="1200" height="400" fill="#0d1117"/>
+
+  <!-- Minimal Structural Code Grid / Alignment System -->
+  <g stroke="#eed6c4" stroke-opacity="0.04" stroke-width="1">
+    <line x1="80" y1="0" x2="80" y2="400" />
+    <line x1="1120" y1="0" x2="1120" y2="400" />
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="340" x2="1200" y2="340" />
+  </g>
+
+  <!-- Elegant Structural Frames (Claude Coder Aesthetic) -->
+  <g stroke="#e2b89d" stroke-opacity="0.25" stroke-width="1" fill="none">
+    <!-- Top Left Status Block -->
+    <path d="M 80,90 L 80,60 L 220,60" />
+    <!-- Bottom Right Framework Anchor -->
+    <path d="M 1120,310 L 1120,340 L 980,340" />
+  </g>
+
+  <!-- Code Syntax & System Architecture Frame (Right Column) -->
+  <g transform="translate(820, 105)" font-family="Consolas, 'Fira Code', Monaco, monospace" font-size="12" xml:space="preserve">
+    <!-- Bracket Wireframe Graphic -->
+    <path d="M -30,0 L -40,0 L -40,185 L -30,185" fill="none" stroke="#e2b89d" stroke-width="1" opacity="0.3"/>
+    
+    <!-- Code Construct Lines -->
+    <text x="0" y="15" fill="#e2b89d" font-weight="bold" opacity="0.9">class FalizCore(AutonomousAgent):</text>
+    <text x="20" y="40" fill="#eed6c4" opacity="0.6">def __init__(self, version="3.2"):</text>
+    <text x="40" y="65" fill="#cc9a7a" opacity="0.8">self.identity = "FALIZ"</text>
+    <text x="40" y="90" fill="#cc9a7a" opacity="0.8">self.engine = "Multi-Agent_v3"</text>
+    <text x="40" y="115" fill="#eed6c4" opacity="0.6">self.status = "OPERATIONAL"</text>
+    
+    <text x="20" y="145" fill="#e2b89d" font-weight="bold" opacity="0.9">def execute(self, prompt):</text>
+    <text x="40" y="170" fill="#eed6c4" opacity="0.5">return self.brain.orchestrate()</text>
+
+    <!-- Interactive Node Indicator -->
+    <circle cx="-40" cy="92" r="4" fill="#eed6c4"/>
+    <circle cx="-40" cy="92" r="10" fill="none" stroke="#e2b89d" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Left Side Small Accent / Dev Info -->
+  <g transform="translate(95, 82)" font-family="Consolas, 'Fira Code', monospace" font-size="11" letter-spacing="1">
+    <text x="0" y="0" fill="#e2b89d" font-weight="bold" opacity="0.8">● SYSTEM_INIT</text>
+    <text x="110" y="0" fill="#eed6c4" opacity="0.4">// Developer: FAHAD</text>
+  </g>
+
+  <!-- Primary Branding Layout -->
+  <!-- FALIZ Title (Using a premium, clean Editorial Serif styling) -->
+  <text x="95" y="210" 
+        font-family="Georgia, 'Times New Roman', Times, serif" 
+        font-size="100" 
+        font-weight="normal" 
+        letter-spacing="4" 
+        fill="url(#warmGold)" 
+        filter="url(#softDepth)">Faliz</text>
+
+  <!-- Framework Subtitle Tagline -->
+  <text x="100" y="258" 
+        font-family="Consolas, 'Fira Code', Monaco, monospace" 
+        font-size="15" 
+        font-weight="bold" 
+        letter-spacing="5" 
+        fill="#eed6c4" 
+        opacity="0.85">AUTONOMOUS MULTIPLE AGENT SYSTEM</text>
+
+  <!-- Bottom Stylized Separator Accent -->
+  <line x1="100" y1="280" x2="320" y2="280" stroke="#cc9a7a" stroke-width="1.5" opacity="0.6"/>
+  <rect x="100" y="279" width="30" height="3" fill="#eed6c4"/>
+
+  <!-- Technical Version Tag (Bottom Right) -->
+  <text x="1105" y="325" 
+        font-family="Consolas, 'Fira Code', monospace" 
+        font-size="13" 
+        letter-spacing="2" 
+        fill="#eed6c4" 
+        text-anchor="end" 
+        font-weight="bold"
+        opacity="0.5">build_v3.2 // release_stable</text>
 </svg>
