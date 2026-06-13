@@ -1,22 +1,5 @@
 <div align="center">
-
-```html
-<pre style="font-family: monospace; line-height: 1.2; text-align: center; background-color: #0d1117; padding: 20px; border-radius: 10px; color: #c9d1d9;">
-<span style="color: #58a6ff;">      ::::::::::</span> <span style="color: #ff7b72;">:::</span>      <span style="color: #79c0ff;">:::</span>        <span style="color: #d2a8ff;">:::::::::::</span> <span style="color: #ffa657;">::::::::::</span>       <span style="color: #a5d6ff;">:::</span>      <span style="color: #ff7b72;">:::::::::::</span>
-<span style="color: #58a6ff;">     :+:</span>        <span style="color: #ff7b72;">:+: :+:</span>    <span style="color: #79c0ff;">:+:</span>            <span style="color: #d2a8ff;">:+:</span>          <span style="color: #ffa657;">:+:</span>         <span style="color: #a5d6ff;">:+: :+:</span>        <span style="color: #ff7b72;">:+:</span>   
-<span style="color: #58a6ff;">    +:+</span>        <span style="color: #ff7b72;">+:+   +:+</span>   <span style="color: #79c0ff;">+:+</span>            <span style="color: #d2a8ff;">+:+</span>         <span style="color: #ffa657;">+:+</span>         <span style="color: #a5d6ff;">+:+   +:+</span>       <span style="color: #ff7b72;">+:+</span>   
-<span style="color: #58a6ff;">   :#::+::#</span>   <span style="color: #ff7b72;">+#++:++#++:</span>  <span style="color: #79c0ff;">+#+</span>            <span style="color: #d2a8ff;">+#+</span>        <span style="color: #ffa657;">+#+</span>         <span style="color: #a5d6ff;">+#++:++#++:</span>      <span style="color: #ff7b72;">+#+</span>   
-<span style="color: #58a6ff;">  +#+</span>        <span style="color: #ff7b72;">+#+     +#+</span>   <span style="color: #79c0ff;">+#+</span>            <span style="color: #d2a8ff;">+#+</span>       <span style="color: #ffa657;">+#+</span>          <span style="color: #a5d6ff;">+#+     +#+</span>      <span style="color: #ff7b72;">+#+</span>   
-<span style="color: #58a6ff;"> #+#</span>        <span style="color: #ff7b72;">#+#     #+#</span>   <span style="color: #79c0ff;">#+#</span>            <span style="color: #d2a8ff;">#+#</span>      <span style="color: #ffa657;">#+#</span>           <span style="color: #a5d6ff;">#+#     #+#</span>      <span style="color: #ff7b72;">#+#</span>   
-<span style="color: #58a6ff;">###</span>        <span style="color: #ff7b72;">###     ###</span>   <span style="color: #79c0ff;">##########</span> <span style="color: #d2a8ff;">###########</span> <span style="color: #ffa657;">##########</span>   <span style="color: #a5d6ff;">###     ###</span>  <span style="color: #ff7b72;">###########</span>
-
-<span style="color: #8b949e;">        ╭──────────────────────────────────────────────────────────╮</span>
-<span style="color: #8b949e;">        │</span>  <span style="color: #e3b341;">/\_/\</span>                                                   <span style="color: #8b949e;">│</span>
-<span style="color: #8b949e;">        │</span> <span style="color: #e3b341;">( o.o )</span>  <span style="color: #c9d1d9;">Flexible Autonomous Life Intelligence Zone</span>      <span style="color: #8b949e;">│</span>
-<span style="color: #8b949e;">        │</span>  <span style="color: #e3b341;">> ^ <</span>                                                   <span style="color: #8b949e;">│</span>
-<span style="color: #8b949e;">        ╰──────────────────────────────────────────────────────────╯</span>
-</pre>
-```
+  <img src="./faliz_header.svg" alt="F.A.L.I.Z AI System" width="800"/>
 
 **Your life, intelligently orchestrated.**
 

@@ -1,0 +1,32 @@
+<svg width="800" height="250" viewBox="0 0 800 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .mono { font-family: monospace; font-size: 18px; white-space: pre; }
+    .blue { fill: #58a6ff; }
+    .red { fill: #ff7b72; }
+    .light-blue { fill: #79c0ff; }
+    .purple { fill: #d2a8ff; }
+    .orange { fill: #ffa657; }
+    .gray { fill: #8b949e; }
+    .yellow { fill: #e3b341; }
+    .white { fill: #c9d1d9; }
+  </style>
+  <rect width="800" height="250" fill="#0d1117"/>
+
+  <text x="50%" y="30" dominant-baseline="middle" text-anchor="middle" class="mono">
+    <tspan x="50%" dy="0" class="blue">      :::::::::: <tspan class="red">:::</tspan>      <tspan class="light-blue">:::</tspan>        <tspan class="purple">:::::::::::</tspan> <tspan class="orange">::::::::::</tspan>       <tspan class="blue">:::</tspan>      <tspan class="red">:::::::::::</tspan></tspan>
+    <tspan x="50%" dy="1.2em" class="blue">     :+:        <tspan class="red">:+: :+: </tspan>   <tspan class="light-blue">:+:</tspan>            <tspan class="purple">:+:</tspan>          <tspan class="orange">:+:</tspan>         <tspan class="blue">:+: :+: </tspan>       <tspan class="red">:+:</tspan>   </tspan>
+    <tspan x="50%" dy="1.2em" class="blue">    +:+        <tspan class="red">+:+   +:+ </tspan>  <tspan class="light-blue">+:+</tspan>            <tspan class="purple">+:+</tspan>         <tspan class="orange">+:+</tspan>         <tspan class="blue">+:+   +:+ </tspan>      <tspan class="red">+:+</tspan>   </tspan>
+    <tspan x="50%" dy="1.2em" class="blue">   :#::+::#   <tspan class="red">+#++:++#++:</tspan>  <tspan class="light-blue">+#+</tspan>            <tspan class="purple">+#+</tspan>        <tspan class="orange">+#+</tspan>         <tspan class="blue">+#++:++#++:</tspan>      <tspan class="red">+#+</tspan>   </tspan>
+    <tspan x="50%" dy="1.2em" class="blue">  +#+        <tspan class="red">+#+     +#+</tspan>   <tspan class="light-blue">+#+</tspan>            <tspan class="purple">+#+</tspan>       <tspan class="orange">+#+</tspan>          <tspan class="blue">+#+     +#+</tspan>      <tspan class="red">+#+</tspan>   </tspan>
+    <tspan x="50%" dy="1.2em" class="blue"> #+#        <tspan class="red">#+#     #+#</tspan>   <tspan class="light-blue">#+#</tspan>            <tspan class="purple">#+#</tspan>      <tspan class="orange">#+#</tspan>           <tspan class="blue">#+#     #+#</tspan>      <tspan class="red">#+#</tspan>   </tspan>
+    <tspan x="50%" dy="1.2em" class="blue">###        <tspan class="red">###     ###</tspan>   <tspan class="light-blue">##########</tspan> <tspan class="purple">###########</tspan> <tspan class="orange">##########</tspan>   <tspan class="blue">###     ###</tspan>  <tspan class="red">###########</tspan></tspan>
+  </text>
+
+  <text x="50%" y="180" dominant-baseline="middle" text-anchor="middle" class="mono gray">
+    <tspan x="50%" dy="0">        ╭──────────────────────────────────────────────────────────╮</tspan>
+    <tspan x="50%" dy="1.2em">        │  <tspan class="yellow">/\_/\</tspan>                                                   │</tspan>
+    <tspan x="50%" dy="1.2em">        │ <tspan class="yellow">( o.o )</tspan>  <tspan class="white">Flexible Autonomous Life Intelligence Zone</tspan>      │</tspan>
+    <tspan x="50%" dy="1.2em">        │  <tspan class="yellow">> ^ <</tspan>                                                   │</tspan>
+    <tspan x="50%" dy="1.2em">        ╰──────────────────────────────────────────────────────────╯</tspan>
+  </text>
+</svg>
